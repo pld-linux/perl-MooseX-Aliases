@@ -4,7 +4,6 @@
 
 %define		pdir	MooseX
 %define		pnam	Aliases
-%include	/usr/lib/rpm/macros.perl
 Summary:	MooseX::Aliases - easy aliasing of methods and attributes in Moose
 Name:		perl-MooseX-Aliases
 Version:	0.10
