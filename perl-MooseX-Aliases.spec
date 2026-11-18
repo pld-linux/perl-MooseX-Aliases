@@ -6,20 +6,19 @@
 %define		pnam	Aliases
 Summary:	MooseX::Aliases - easy aliasing of methods and attributes in Moose
 Name:		perl-MooseX-Aliases
-Version:	0.10
-Release:	2
+Version:	0.11
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/MooseX/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	148876a7f538881a81597669932c49bc
+Source0:	https://www.cpan.org/modules/by-module/MooseX/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	78376310deba54ca644292d44566cefa
 URL:		http://search.cpan.org/dist/MooseX-Aliases/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Moose >= 1.09
+BuildRequires:	perl-Moose >= 2.0000
 BuildRequires:	perl-Test-Fatal >= 0.003
-BuildRequires:	perl-Test-Requires
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
